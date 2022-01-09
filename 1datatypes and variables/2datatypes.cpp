@@ -22,4 +22,18 @@ int main(){
 | double                  |       64      |                       |
 | bool                    |       8       |                       |
 |-----------------------------------------------------------------
+ 
+ 
+ 
+ Datatypes types------
+
+ 1. primitive datatypes- pre defined 
+            ->integer type :  short, int, long, long long, unsigned int, unsigned long long
+            ->character type: char, unsigned char, char16_t,char32_t, wchar_t, char8_t
+            ->Floating type: float,double,long double
+            ->other: bool,void
+ 2. non primitive datatypes:
+            -> Derived : Array, Pointer, string, vector
+            -> User defined: class, struct
+ 
  */
