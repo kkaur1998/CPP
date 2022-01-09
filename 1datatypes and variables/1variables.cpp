@@ -3,6 +3,8 @@ int main(){
     std::cout<<"Hi this is first program in cpp";
 }
 
+// you don't need to use "std::cout" if you include "using namespace std;" but best practice is to use scope resolution vector(::). rest it is choice
+
 /*
 Variable naming rules....
 ->Allowed characters=[A-Za-z0-9],_(Underscore)
