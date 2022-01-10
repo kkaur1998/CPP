@@ -6,11 +6,12 @@ class Pair{
     public:
     T x,y;
     Pair (T i, T j){x=i;y=j;}    //constructor
-    T getFirst();
-    T getSecond();
+    T getFirst(){return x;};
+    T getSecond(){return y;};
 };
 
 template <typename T>
+<<<<<<< HEAD
 Pair<T>::getFirst(){return x;}
 Pair<T>::getSecond(){return y;}
 
@@ -20,3 +21,10 @@ int main(){
     cout<<p1.getFirst()<<"     "<<p1.getFirst()<<endl;
     cout<<p2.getFirst()<<"     "<<p2.getSecond()<<endl;
 }
+=======
+int main(){
+    Pair <int> p1(10,20),p2(30,40);
+    cout<<p1.getFirst()<<"     "<<p1.getFirst();<<endl;
+    cout<<p2.getFirst()<<"     "<<p2.getSecond();<<endl;
+}
+>>>>>>> 529900b666e22ca3c906cfe38a72ad0119e62682
