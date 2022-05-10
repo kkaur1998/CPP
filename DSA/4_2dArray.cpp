@@ -6,12 +6,12 @@
 using namespace std;
 int main(){
     int k,l;
-    int arr[10][10];
     int choice,rows,cols,i,j,element,sum;
     cout<<"enter no. of rows\n";
     cin>>rows;
     cout<<"enter no. of columns\n";
     cin>>cols;
+        int arr[rows][cols];
     for(int i=0; i<rows; i++){
         for(int j=0; j<cols; j++){
             cout<<"enter arr["<<i<<"]["<<j<<"]";
@@ -28,6 +28,7 @@ int main(){
         cout<<"4 to update the element\n";
         cout<<"5 to exit\n";
         cin>>choice;
+        //to display the elements
         if(choice==1){
             for(int i=0; i<rows; i++){
                 cout<<"\n";
@@ -36,6 +37,7 @@ int main(){
                 }
             }
         }
+        //To search the element-- you need to enter the value you want to search
         else if(choice==2){
             cout<<"enter the element you want to search\n";
             cin>>element;
@@ -47,6 +49,7 @@ int main(){
                 }
             }          
         }
+        //to add the elements of the array
         else if(choice==3){
             for(int i=0; i<rows; i++){
                 for(int j=0; j<cols; j++){
@@ -55,6 +58,7 @@ int main(){
             } 
             cout<<"sum of all the elements of array is"<<sum;
         }
+        //to update the element on the specific index---you need to enter value of [i]and[j]
         else if(choice==4){
             cout<<"\n enter the index element you want to update";
             cin>>k>>l;
@@ -64,6 +68,7 @@ int main(){
             cout<<"sum of all the elements of array is"<<sum;
             cout<<"item is updated\n";
         }
+        //if any other choice then break the loop
         else{
             break;
         }
