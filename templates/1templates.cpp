@@ -8,10 +8,20 @@ T myMax(T x, T y){
     return(x>y)?x:y;
 }
 
+template<typename T>
+T myMax(T a){
+    return a*a;
+}
 int main(){
+    cout<<"\n\n\n\n\n--------------------------------------------------------------\n\n";
     cout<<myMax<int>(3,7)<<endl;
     cout<<myMax<char>('c','g')<<endl;
+    cout<<myMax<int>(3)<<endl;
+    cout<<"\n\n--------------------------------------------------------------\n\n\n\n";
 }
+
+
+
 /*
 Template- write once use many times
 ----------------------------------------------------------------------
