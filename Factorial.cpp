@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// here we have declared Factorial Class
+
 class Factorial{
     public:
     long calcFact(int num){
